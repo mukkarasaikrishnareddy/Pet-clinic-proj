@@ -18,9 +18,9 @@ resource "aws_security_group" "rds" {
     to_port     = 3306
     protocol    = "tcp"
 
-    # Replace this with the actual Terraform resource reference
-    # or input variable for the EKS cluster security group.
-    security_groups = [var.eks_security_group_id]
+    security_groups = [
+      aws_eks_cluster.petclinic.vpc_config[0].cluster_security_group_id
+    ]
   }
 
   egress {
