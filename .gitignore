@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Terraform
 .terraform/
 *.tfstate
@@ -5,19 +6,41 @@
 *.tfplan
 plan.out
 crash.log
+=======
+# Terraform working directory
+.terraform/
+
+# Terraform state and backups
+*.tfstate
+*.tfstate.*
+terraform.tfstate*
+*.tfplan
+crash.log
+crash.*.log
+
+# Local variable and override files
+*.tfvars
+*.tfvars.json
+>>>>>>> 15d0238 (Add PetClinic AWS Terraform infrastructure)
 override.tf
 override.tf.json
 *_override.tf
 *_override.tf.json
+<<<<<<< HEAD
 # Do NOT ignore .terraform.lock.hcl — it should be committed for reproducible builds
 
 # Sensitive files — NEVER commit
 *.tfvars
 !*.tfvars.example
+=======
+
+# Credentials and private keys
+>>>>>>> 15d0238 (Add PetClinic AWS Terraform infrastructure)
 .env
 .env.*
 *.pem
 *.key
+<<<<<<< HEAD
 *.p12
 *.pfx
 credentials
@@ -59,3 +82,10 @@ package-lock.json
 *.bak
 *.log
 tmp/
+=======
+credentials
+credentials.*
+
+# Local executable
+/kubectl
+>>>>>>> 15d0238 (Add PetClinic AWS Terraform infrastructure)
