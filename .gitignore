@@ -1,46 +1,29 @@
-<<<<<<< HEAD
-# Terraform
-.terraform/
-*.tfstate
-*.tfstate.backup
-*.tfplan
-plan.out
-crash.log
-=======
 # Terraform working directory
 .terraform/
 
-# Terraform state and backups
+# Terraform state, plans, and crash logs
 *.tfstate
 *.tfstate.*
 terraform.tfstate*
 *.tfplan
+plan.out
 crash.log
 crash.*.log
 
-# Local variable and override files
+# Local variables and overrides
 *.tfvars
 *.tfvars.json
->>>>>>> 15d0238 (Add PetClinic AWS Terraform infrastructure)
+!*.tfvars.example
 override.tf
 override.tf.json
 *_override.tf
 *_override.tf.json
-<<<<<<< HEAD
-# Do NOT ignore .terraform.lock.hcl — it should be committed for reproducible builds
-
-# Sensitive files — NEVER commit
-*.tfvars
-!*.tfvars.example
-=======
 
 # Credentials and private keys
->>>>>>> 15d0238 (Add PetClinic AWS Terraform infrastructure)
 .env
 .env.*
 *.pem
 *.key
-<<<<<<< HEAD
 *.p12
 *.pfx
 credentials
@@ -48,6 +31,9 @@ credentials.*
 kubeconfig
 kubeconfig.*
 aws-credentials
+
+# Local executable
+/kubectl
 
 # IDE
 .idea/
@@ -65,27 +51,18 @@ Thumbs.db
 Desktop.ini
 ._*
 
-# Python (Checkov, scripts)
+# Python
 __pycache__/
 *.pyc
 *.pyo
 .venv/
 venv/
-.env/
 
-# Node (Context7, tooling)
+# Node
 node_modules/
-package-lock.json
 
-# Temporary
+# Temporary files
 *.tmp
 *.bak
 *.log
 tmp/
-=======
-credentials
-credentials.*
-
-# Local executable
-/kubectl
->>>>>>> 15d0238 (Add PetClinic AWS Terraform infrastructure)
