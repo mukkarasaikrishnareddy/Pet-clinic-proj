@@ -1,4 +1,3 @@
-```hcl
 resource "aws_security_group" "rds" {
   name        = "petclinic-rds-sg"
   description = "Security group for PetClinic RDS MySQL"
@@ -37,4 +36,3 @@ resource "aws_security_group" "rds" {
     Project     = "PetClinic"
   }
 }
-```

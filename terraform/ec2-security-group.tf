@@ -1,4 +1,3 @@
-```hcl
 resource "aws_security_group" "ec2" {
   name        = "petclinic-ec2-sg"
   description = "Security group for PetClinic EC2"

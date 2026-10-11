@@ -4,7 +4,7 @@ variable "ecr_repository_name" {
   default     = "petclinic"
 }
 
-variable "eks_security_group_id" {
-  description = "Security group ID used by the EKS cluster"
+variable "ssh_allowed_cidr" {
+  description = "Trusted IP range permitted to access EC2 over SSH"
   type        = string
 }
